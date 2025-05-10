@@ -23,13 +23,14 @@ submitBtn.addEventListener('click',()=>{
         shownMsg = `You selected ${myChosenButton} out of 5`
         resultDisplay.innerText = shownMsg
 
-        question.classList.remove('block')
-        question.classList.add('hidden')
-        response.classList.remove('hidden')
-        response.classList.add('block')
+        question.classList.remove('opacity-100', 'pointer-events-auto', 'z-10');
+        question.classList.add('opacity-0', 'pointer-events-none', 'z-0');
+
+        response.classList.remove('opacity-0', 'pointer-events-none', 'z-0');
+        response.classList.add('opacity-100', 'pointer-events-auto', 'z-10');
     }
     else {
-        console.log('Please select a button first!')
+        alert('Click a button first!')
     }
 })
 
