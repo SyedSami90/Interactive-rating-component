@@ -1,0 +1,21 @@
+{
+  "name": "tailwind-new",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss src/styles.css -o dist/styles.css --watch",
+    "build": "postcss src/styles.css -o dist/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.4",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.4"
+  },
+  "devDependencies": {
+    "postcss-cli": "^11.0.1"
+  }
+}
